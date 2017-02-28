@@ -1,2 +1,2 @@
-INSERT INTO simcon_SharedResponses (SharedResponsesID, responseID, researcherID) VALUES (1,1,2);
-INSERT INTO simcon_SharedResponses (SharedResponsesID, responseID, researcherID) VALUES (2,2,2);
+INSERT INTO simcon_SharedResponses (SharedResponsesID_id, responseID_id, researcherID_id) VALUES (1,1,2);
+INSERT INTO simcon_SharedResponses (SharedResponsesID_id, responseID_id, researcherID_id) VALUES (2,2,2);
