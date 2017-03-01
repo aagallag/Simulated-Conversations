@@ -1,4 +1,4 @@
-# Winter Capstone Setup
+# Winter Capstone Setup for Legacy Backend
 
 ## Connect to the PDX VPN and Windows Remote Desktop
 - [PDX VPN Setup](https://cat.pdx.edu/linux/connecting-to-the-cecs-pptp-vpn.html)
