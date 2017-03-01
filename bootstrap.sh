@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
 sudo apt-get update
-sudo apt-get install make -y
-sudo apt-get install patch -y
-#Gets and installs Apache Web Server
-sudo apt-get install -y apache2
+sudo apt-get install -y make patch apache2
 rm -rf /var/www
 ln -fs /vagrant /var/www
 
