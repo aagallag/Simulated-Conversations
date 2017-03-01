@@ -8,7 +8,7 @@ ln -fs /vagrant /var/www
 sudo su -
 cd /home/vagrant
 #Imports SQLite 3.5.9 from shared folder (/var/www) and installs it
-wget http://localhost/external/sqlite-3.5.9.tar.gz
+cp /var/www/external/sqlite-3.5.9.tar.gz .
 tar xzvf sqlite-3.5.9.tar.gz
 mkdir bld
 cd bld
@@ -20,7 +20,7 @@ cd ..
 #The patches (setup_py.patch, ssl.patch, & ssl_py.patch) used to make Python 2.6.8 work,
 #are published at http://ubuntuforums.org/showthread.php?t=1976837 by appociappo
 apt-get build-dep python -y
-wget http://localhost/external/Python-2.6.8.tar.gz
+cp /var/www/external/Python-2.6.8.tar.gz .
 tar xzvf Python-2.6.8.tar.gz
 cd Python-2.6.8
 cp /var/www/external/setup_py.patch setup_py.patch
@@ -38,7 +38,7 @@ make MACHDEP=linux2 -j3
 make install
 cd ..
 #Imports Django 1.6 form shared folder (/var/www) and installs it
-wget http://localhost/external/Django-1.6.tar.gz
+cp /var/www/external/Django-1.6.tar.gz .
 tar xzvf Django-1.6.tar.gz
 cd Django-1.6
 python setup.py install
