@@ -20,8 +20,8 @@ vagrant up
 ```
 vagrant ssh
 cd /vagrant/vagrant/
+python manage.py collectstatic
 python manage.py syncdb
-python manage.py colectstatic
 ```
 
 ## Run the server
