@@ -9,10 +9,6 @@ local_settings.py
 
 .vagrant/machines/default/virtualbox/id
 
-*.gz
-
-*.patch
-
 .gitignore
 
 vagrant/simcon/student/models.py
