@@ -7,8 +7,8 @@ The following setup steps are not suitable for production.
 
 ### Dependencies
 
-- VirtualBox
-- Vagrant
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+- [Vagrant](https://www.vagrantup.com/docs/installation/)
 
 ### Launch/Initialize the VM
 ```
