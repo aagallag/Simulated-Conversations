@@ -1,36 +1,9 @@
 # Vagrant Development Setup
 
-## Warning
-The following setup steps are not suitable for production.
+## Local Setup
+Configuring Vagrant locally is more difficult to initially setup, but is much easier to access the webserver since it doesn't require the VPN + remote desktop connection.
+[Local Setup](README_VAGRANT_DEV_SETUP_LOCAL.md)
 
-## First Time Setup
-
-### Dependencies
-
-- VirtualBox
-- Vagrant
-
-### Launch/Initialize the VM
-```
-cd Simulated-Conversations/
-vagrant up
-```
-
-### Setup the Simulated Conversations backend
-```
-vagrant ssh
-cd /vagrant/vagrant/
-python manage.py collectstatic
-python manage.py syncdb
-```
-
-## Run the server
-
-### Launch the Simulated Conversations backend server
-```
-cd Simulated-Conversations/
-vagrant up
-vagrant ssh
-cd /vagrant/vagrant/
-python manage.py runserver 0.0.0.0:8258
-```
+## Remote PDX Setup
+Launching the remote server, is much easier, but is a hassle to connect to the web service because it requires a VPN connection to PDX and remote desktop connection to the Windows Server.
+[Remote Setup](README_VAGRANT_DEV_SETUP_REMOTE.md)
